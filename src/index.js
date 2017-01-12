@@ -3,11 +3,6 @@ import starWarsNames from './starwars-names.json';
 
 const getRandomItem = uniqueRandomArray(starWarsNames);
 
-module.exports = {
-  all: starWarsNames,
-  random: random
-};
-
 function random(number) {
   if (number === undefined) {
     return getRandomItem();
@@ -19,3 +14,8 @@ function random(number) {
     return randomItems;
   }
 }
+
+module.exports = {
+  all: starWarsNames,
+  random: random
+};
